@@ -47,8 +47,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm test"
+      "pre-commit": "pretty-quick --staged && ng test --watch=false --browsers=ChromeHeadless"
     }
   },
   "lint-staged": {
